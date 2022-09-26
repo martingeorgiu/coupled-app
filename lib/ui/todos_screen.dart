@@ -23,6 +23,7 @@ class _TodosScreenState extends State<TodosScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: const Text('Todos')),
       body: Column(
         children: todos != null
             ? todos!.map((e) => Text(e)).toList()
